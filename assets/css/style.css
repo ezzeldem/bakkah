@@ -18,7 +18,10 @@ a:hover {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+}
+html[dir="rtl"] body {
+  font-family: "Cairo", sans-serif;
 }
 
 .intro-page {
@@ -61,13 +64,16 @@ body {
   height: 100%;
 }
 .nav-bar-section .lang-box a {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 600;
   font-size: 16px;
   padding: 5px 15px;
   border-radius: 50px;
   color: black;
   background-color: white;
+}
+html[dir="rtl"] .nav-bar-section .lang-box a {
+  font-family: "Lato", sans-serif;
 }
 .nav-bar-section .lang-box a:hover {
   color: white;

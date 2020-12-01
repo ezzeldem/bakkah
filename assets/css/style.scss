@@ -29,13 +29,16 @@ $orang-color: #f64403;
   transition: 0.2s all ease-in-out;
 }
 
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
+  html[dir="rtl"] & {
+    font-family: "Cairo", sans-serif;
+  }
 }
 
 .intro-page {
-    padding: 0 0 63px;
-    height: 100vh;
+  padding: 0 0 63px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +81,10 @@ body{
     justify-content: flex-end;
     height: 100%;
     a {
-      font-family: 'Cairo', sans-serif;
+      font-family: "Cairo", sans-serif;
+      html[dir="rtl"] & {
+        font-family: "Lato", sans-serif;
+      }
       font-weight: 600;
       font-size: 16px;
       @extend.trans-4;
@@ -228,14 +234,6 @@ body{
     background-position: left;
   }
 
-
-
-
-
-
-
-
-
   .nav-bar-section {
     .logo-box {
       .logo-link {
@@ -252,26 +250,21 @@ body{
     }
   }
 
-
-
-
-
-
   .contant-section {
-      padding: 0;
-      .contant-box {
-        width: 68%;
-        margin: 30px auto;
-          &:hover{
-            margin-left: auto;
-          }
+    padding: 0;
+    .contant-box {
+      width: 68%;
+      margin: 30px auto;
+      &:hover {
+        margin-left: auto;
+      }
       .title-box {
         margin: 0 0 30px;
         padding: 0 0 14px;
         width: unset;
         .contant-title {
-            margin: 0 0 6px;
-            font-size: 24px;
+          margin: 0 0 6px;
+          font-size: 24px;
         }
         .company-title {
           font-size: 12px;
