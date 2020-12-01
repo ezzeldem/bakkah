@@ -18,11 +18,12 @@ a:hover {
 }
 
 .intro-page {
+  padding: 0 0 63px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/COVER.PNG");
-  height: 100vh;
   position: relative;
   z-index: 1;
 }
@@ -136,7 +137,7 @@ a:hover {
 }
 
 .footer-section {
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0;
   padding: 20px 0;
@@ -211,6 +212,7 @@ a:hover {
   }
 
   .footer-section {
+    padding: 0 0 0px;
     text-align: center;
     position: relative;
   }
